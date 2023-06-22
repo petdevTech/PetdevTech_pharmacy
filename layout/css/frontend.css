@@ -1,0 +1,611 @@
+/*start main rules */
+body {
+    background-color: #020b1f;
+    font-size: 18px;
+    color: whitesmoke; 
+
+    /* min-height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background: url(../../images/bg2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    perspective: 1000px; */
+}
+h1{
+    font-size: 55px;
+    margin: 40px 0;
+    font-weight: bold;
+    color: #99efd4  ;
+  }
+  .input-container{
+      position: relative;
+  }
+
+  .card{
+    background: -webkit-linear-gradient(top right,#216e93,#21648a,#1f5881,#172d5b,#191c51);
+}
+
+/* .card-header{
+    background-color: black;
+} */
+
+.cart{
+    cursor: pointer;
+}
+.asterisk{
+    /* Elzero code  */
+    /* font-size: 30px;
+    position: absolute;
+    right: 30px;
+    top: 8px;
+    color: #D20707; */
+
+    /* my code */
+    font-size: 20px;
+    position: absolute;
+    right: 7px;
+    top: 0px;
+    color: #D20707;
+}
+.main-form{
+    position: absolute;
+}
+.main-form .asterisk{
+    /*  video num 99*/
+    /* Elzero code  */
+    /* font-size: 30px;
+    position: absolute;
+    right: 30px;
+    top: 8px;
+    color: #D20707; */
+    
+    /* my code */
+    font-size: 30px;
+    position: relative;
+    right: 20px;
+    top: -3px;
+    color: #D20707;
+}
+.nice-message{
+
+    padding: 10px;
+    /* background-color: #FFF; */
+    background: -webkit-linear-gradient(top right,#216e93,#21648a,#1f5881,#172d5b,#191c51);
+
+    margin: 10px 0;
+    border-left: 33px solid #181745;
+    color: white;
+    /* color:  #080; */
+    font-weight: bold;
+    border-radius: 9px;
+    opacity: 0.9;
+
+    padding: 10px;
+    
+}
+/*end of main rules*/
+
+
+/*start bootstrap edits*/
+.navbar {
+ border-radius: 0;
+ margin-bottom: 0;  
+}
+.navbar::after{
+    /* added this , to make the background image in the navbar transparent */
+    background: url(../../images/bg2.jpeg) no-repeat;    /** added it */
+    background-size: cover;    /** added it */
+    border-color: transparent;
+}
+.nav > li > a , .navbar-brand{
+    padding: 15px , 12px ;
+}
+
+.navbar-brand {
+    font-size: 1em ; /* it means it taes 1 times the font-size of the page */
+   
+}
+.navbar-dark .navbar-nav .nav-link:focus, 
+.navbar-dark .navbar-nav .nav-link:hover,
+/* .navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a :focus,
+.navbar .navbar-nav > .open > a :hover, */
+.dropdown-menu{
+background-color: #ec4468;
+}
+
+.dropdown-menu{
+min-width: 180px;
+padding: 0;
+font-size: 1em;
+border: none;
+border-radius: 0;
+}
+
+.dropdown-menu > li > a{
+    color:#FFF;
+    padding: 10px 15px;
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover{
+    color: #FFF;
+    background-color: #0d1117;
+}
+
+
+.form-control, .form-control-lg{
+    /* i added  .form-control-lg , for modifing asteris */
+position: relative;
+}
+
+/*end bootstrap edits*/
+
+
+
+/* Start Header  Page */
+
+.my-image{
+    width: 40px;
+    height: 40px;
+}
+/* End Header Page */
+
+
+
+
+/* ***********************************************Start Item Card Edits *************************/
+.cardy{
+    margin: 0px !important;
+    padding: 0px;
+
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    /* box-shadow: 20px 20px 50px rgb(0,0,0,0.5); */
+}
+.item-pic h3>a{
+text-decoration: none;
+color: white;
+}
+
+/* cardy-class is col-md-3 the one that contains card in it */
+.cardy-class{
+    position: relative;
+    /* margin: 30px; */
+    border-radius: 15px;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.bgposter{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    background: url(pharmacy.png);
+    background-size: cover;
+    background-position: center;
+    zoom: 1;
+}
+
+
+.item-card img{
+   border-radius: 15px;
+   min-height: 200px;
+   
+}
+
+.cardy .item-card h5,p{
+    margin: 5px;
+}
+
+.item-card:hover img{
+    z-index: 1;
+    transform: translateZ(30px);
+    /* transform: translateY(40px); */
+    transform: scale(1, 1.3);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.cardy .item-card{
+    padding-top: 21px;
+}
+
+/* End Item Card Edits */
+
+
+
+
+
+
+/* Start Login Page */
+
+/* new edits for form page */
+.login-page{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../../images/bg2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    perspective: 1000px;
+}
+.login-page form{
+    height: 450px;
+    width: 350px;
+    background: rgba(255, 255, 255, .1);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    backdrop-filter: blur(3px);
+    transform-style: preserve-3d;
+}
+.login-page form input:not([type=submit]) {
+    /* added the not rule in the selector */
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 82%;
+    background: rgba(0,0,0, .7);
+    color: rgba(255,255,255, .7);
+    box-shadow: 0 0 5px rgba(0,0,0, .5) inset;
+    font-size: 17px;
+    padding: 0 10px;
+    margin: 15px 24px;  /* changed from 0 to 24px  */;
+    letter-spacing: 1px;
+}
+
+/*  added this to change form input background*/
+/* .login-page [data-class="login"].selected{
+    background: linear-gradient(60deg,lightblue, transparent);
+}
+.login-page [data-class="signup"].selected{
+    background: linear-gradient(60deg,lightgreen, transparent);
+} */
+/* end of this addition */
+
+.login-page form input[type = "submit"] {
+    width: 90%;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 50px;
+}
+
+/* end of these edits */
+.login-page form, 
+.the-errors{
+    max-width: 380px;
+    margin: auto;
+}
+.login-page form input{
+    margin-bottom: 10px;
+}
+.login-page [data-class="login"].selected{
+    color: #337AB7;
+}
+.login-page [data-class="signup"].selected{
+    color: #5cb85c;
+}
+.login-page h1{
+    color: #C0C0C0;
+}
+.login-page h1 span{
+cursor: pointer;
+}
+.login-page .signup{
+    display: none;
+}
+.the-errors{
+    padding: 10px;
+    text-align: left;
+    border-left: 5px solid #cd6858;
+    background-color: #fff;
+    margin-bottom:8px;
+    border-right: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #919191;
+}
+.the-errors .error{
+    border-left: 5px solid #cd6858;
+}
+/* End Login Page */
+
+
+/* start home page*/
+
+
+/* .item-pic img{
+max-width: 18rem;
+max-height: 18rem;
+} */
+
+
+.item-pic{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* end homepage */
+
+
+
+
+
+/* Start Categories Page */
+.item-card{
+    position:relative;
+}
+.item-card .price-tag{
+    background-color: #B4B4B4;
+    padding: 2px 10px;
+    position: absolute;
+    left: 0;
+    top:10px;
+    font-weight: bold;
+    color: #FFF;
+}
+.item-card .approve-status{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #b85a5a;
+    color: #FFF;
+    padding: 3px 5px;
+}
+.item-card .caption p{
+    height: 44px;
+    max-height: 44px;
+}
+/* End Categories Page */
+
+
+/* Start profile Page */
+.block{
+    margin: 20px 0 0;
+}
+.information ul{
+    padding: 0;
+    margin: 0;
+}
+.information ul li{
+    padding:10px;
+}
+.information ul li:nth-child(odd){
+    background-color: #EEE;
+}
+.information ul li span{
+    display: inline-block;
+    width: 180px;
+}
+/***[.thumbnail img] My edit because the image was too big , and it was stretching out the card***/
+/* and then i added product-display  img for the home page  display of item image */
+.thumbnail img, .item-pic img, .product-display img{
+    max-width: 260px;
+    max-height: 460px;
+}
+.thumbnail .date{
+    text-align: right;
+    font-size: 13px;
+    color: #AAA;
+    font-weight: bold;
+}
+.information .btn{
+    margin-top: 10px;
+}
+/* End Profile Page */
+
+/* Start Items Page  */
+.item-info h2{
+    padding: 10px;
+    margin: 0;
+}
+.item-info p{
+    padding: 10px;
+}
+.item-info ul{
+    text-decoration: none;
+    text-decoration: none;
+    list-style-type: none; /* removes the dots from list item**/
+}
+.item-info ul li{
+    padding: 10px;
+}
+.item-info ul li:nth-child(odd){
+    /* background-color: #020703; */
+}
+.item-info ul li span{
+    display: inline-block;
+    width: 180px;
+}
+.tags-items a{
+    display: inline-block;
+    background-color: #e2e2e2;
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: #666;
+    margin-right: 5px;
+}
+.add-comment h3{
+    margin: 0 0 10px;
+}
+.add-comment textarea{
+    display:block;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 120px;
+}
+.comment-box{
+   margin-bottom: 20px; 
+}
+.comment-box img{
+    max-width: 100px;
+    margin-bottom: 10px;
+    /*Replaced by  "center-block" class of bootstrap */
+     display: block;
+    margin: auto ; 
+}
+.comment-box .lead {
+    background-color: #e0e0e0;
+    position: relative;
+    padding: 10px;
+    margin-top: 25px;
+}
+.comment-box .lead:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent #e0e0e0 transparent transparent ;
+    position: absolute;
+    left: -28px;
+    top: 10px;
+}
+/* End Items Page  */
+
+
+/* Start our Custom */
+.custom-hr{
+    border-top: 1px solid #c9c9c9;
+}
+/* End of our Custom */
+
+
+
+/***********************************************************************************/
+
+
+
+
+/* Start Cart Page */
+
+
+/* * {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Robto' , sans-serif;
+} */
+
+/* header{
+    background-image: url('../../pics/pharmacy1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 158px;
+    position: relative; 
+} */
+
+
+.pics{
+    /* background-image: url('../../pics/pharmacy3.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 158px;
+    width: 100%;
+    position: relative; 
+}
+
+/* .overlay{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right : 0;
+    bottom: 0;
+    padding :0 !important;
+    margin :0 !important;
+    background-color: rgba(10, 10, 10, 0.3);
+}
+
+.pics .containerNav{
+    position: absolute;
+    top: 0;
+    right : 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+.pics nav li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.pics nav li span{
+    padding-left: 5px;
+}
+
+.pics li a{
+padding: 5px;
+background-color: 020b1f;
+border-radius: 15px;
+text-decoration: none;
+}
+
+
+.cart ion-icon{
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px; 
+}
+.cart a {
+    background-color: royalblue;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pics .products-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.image{
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image img{
+    width: 240px;
+    height: 360px;
+} */
+
+/* .add-cart{
+    position: absolute;
+    width: 100%;
+    background-color: darkgrey;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+} */
+
+/* .image:hover .cart1{
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+} */
+
